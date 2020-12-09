@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VT_01RaulSalva"
         mc:Ignorable="d"
-        Title="Gestion de usuarios" Height="450" Width="600">
+        Title="Gestion de productos" Height="450" Width="900">
     <StackPanel Margin="5">
         <StackPanel.Resources>
             <Style TargetType="Button" BasedOn="{StaticResource buttonStyle1}"/>
         </StackPanel.Resources>
         <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
             <Button Content="PRINCIPAL" Click="Button_Click"/>
-            <Button Content="NUEVO" Click="Button_Click_1"/>
-            <Button Content="BUSCAR" Click="Button_Click_2"/>
+            <Button Content="NUEVO USUARIO" Click="Button_Click_1"/>
+            <Button Content="BUSCAR USUARIO" Click="Button_Click_2"/>
+            <Button Content="CREAR PRODUCTO" Click="Button_Click_4"/>
+            <Button Content="BUSCAR PRODUCTO" Click="Button_Click_5"/>
             <Button Content="SALIR" Click="Button_Click_3" />
         </StackPanel>
 

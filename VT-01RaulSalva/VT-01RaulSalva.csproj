@@ -58,8 +58,14 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NewOrModifyProductPage.xaml.cs">
+      <DependentUpon>NewOrModifyProductPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\NewOrModifyUserPage.xaml.cs">
       <DependentUpon>NewOrModifyUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShowProductPage.xaml.cs">
+      <DependentUpon>ShowProductPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ShowUserPage.xaml.cs">
       <DependentUpon>ShowUserPage.xaml</DependentUpon>
@@ -86,7 +92,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\NewOrModifyProductPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\NewOrModifyUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ShowProductPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

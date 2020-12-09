@@ -51,5 +51,9 @@ namespace VT_01RaulSalva
         {
             this.Close();
         }
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            myNavigationFrame.NavigationService.Navigate(new NewOrModifyProductPage("Nuevo producto", productoHandler));
+        }
     }
 }
