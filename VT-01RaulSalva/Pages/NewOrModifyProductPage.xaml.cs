@@ -20,9 +20,55 @@ namespace VT_01RaulSalva.Pages
     /// </summary>
     public partial class NewOrModifyProductPage : Page
     {
-        public NewOrModifyProductPage()
+        public ProductHandler productoHandler;
+        public Producto producto;
+        public int pos;
+        public bool verify;
+        // constructor de nuevo
+        public NewOrModifyProductPage(string title, UsersHandler productoHandler)
         {
             InitializeComponent();
+            titleNewOrModify.Text = title;
+            this.productoHandler = productoHandler;
+            this.verify = false;
+            producto = new Producto();
+            this.userGrid.DataContext = producto;
+        }
+
+        //CONSTRUCTOR DE MODIFICAR
+        public NewOrModifyProductPage(string title, ProductHandler productoHandler, Producto producto, int pos)
+        {
+            InitializeComponent();
+            titleNewOrModify.Text = title;
+            this.productoHandler = productoHandler;
+            this.producto = producto;
+            this.pos = pos;
+            this.productoGrid.DataContext = producto;
+            this.verify = true;
+
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (verify)
+            {
+                productoHandler.ModifyUser(producto, pos);
+            }
+            else
+            {
+                //String nombre = txt_Nombre.Text;
+                //String telefono = txt_Telefono.Text;
+                //DateTime fechaAlta = (DateTime)txt_fechaAlta.SelectedDate;
+                //User user = new User(nombre, telefono, fechaAlta);
+                productoHandler.AddUser(producto);
+
+            }
+
+
+            MainWindow.myNavigationFrame.NavigationService.Navigate(new MainPage());
+
+
         }
     }
 }

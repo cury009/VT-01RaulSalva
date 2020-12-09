@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VT_01RaulSalva"
         mc:Ignorable="d"
-        Title="Gestion de productos" Height="450" Width="900">
+        Title="Gestion de usuarios y productos" Height="450" Width="900">
     <StackPanel Margin="5">
         <StackPanel.Resources>
             <Style TargetType="Button" BasedOn="{StaticResource buttonStyle1}"/>

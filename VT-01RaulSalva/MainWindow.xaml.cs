@@ -24,11 +24,13 @@ namespace VT_01RaulSalva
 
         public static Frame myNavigationFrame;
         public UsersHandler usersHandler;
+        public ProductHandler productHandler;
         public MainWindow()
         {
             InitializeComponent();
             myNavigationFrame = myFrame;
             usersHandler = new UsersHandler();
+            productHandler = new ProductHandler();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -53,7 +55,12 @@ namespace VT_01RaulSalva
         }
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            myNavigationFrame.NavigationService.Navigate(new NewOrModifyProductPage("Nuevo producto", productoHandler));
+            myNavigationFrame.NavigationService.Navigate(new NewOrModifyProductPage("Nuevo producto", productHandler));
+        }
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            myNavigationFrame.NavigationService.Navigate(new ShowProductPage(productHandler));
+
         }
     }
 }

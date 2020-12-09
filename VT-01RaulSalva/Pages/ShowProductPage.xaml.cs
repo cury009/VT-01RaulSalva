@@ -20,7 +20,7 @@ namespace VT_01RaulSalva.Pages
     /// </summary>
     public partial class ShowProductPage : Page
     {
-        public ShowProductPage()
+        public ShowProductPage(ProductHandler productHandler)
         {
             InitializeComponent();
         }

@@ -64,12 +64,14 @@
     <Compile Include="Pages\NewOrModifyUserPage.xaml.cs">
       <DependentUpon>NewOrModifyUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductClass\Producto.cs" />
     <Compile Include="Pages\ShowProductPage.xaml.cs">
       <DependentUpon>ShowProductPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ShowUserPage.xaml.cs">
       <DependentUpon>ShowUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductClass\ProductHandler.cs" />
     <Compile Include="UserClass\User.cs" />
     <Compile Include="UserClass\UsersHandler.cs" />
     <Page Include="Dictionaries\MyStyles.xaml">
