@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VT_01RaulSalva.Pages;
+using VT_01RaulSalva.ProductClass;
 
 namespace VT_01RaulSalva
 {
@@ -14,7 +15,7 @@ namespace VT_01RaulSalva
 
         public ProductHandler()
         {
-            this.productoList = new ObservableCollection<producto>();
+            this.productoList = new ObservableCollection<Producto>();
         }
 
         public void AddProduct(Producto product)

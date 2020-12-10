@@ -15,7 +15,7 @@
 
         <TextBlock x:Name="titleNewOrModify" Text="NUEVO PRODUCTO" Style="{StaticResource textBlockTitleStyle1}"/>
 
-        <Grid x:Name="userGrid" Margin="0,10,0,0" Width="350">
+        <Grid x:Name="productoGrid" Margin="0,10,0,0" Width="350">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>

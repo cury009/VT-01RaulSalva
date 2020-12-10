@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VT_01RaulSalva.ProductClass;
 
 namespace VT_01RaulSalva.Pages
 {
@@ -20,9 +21,37 @@ namespace VT_01RaulSalva.Pages
     /// </summary>
     public partial class ShowProductPage : Page
     {
+        public ProductHandler productHandler;
+        public Producto producto;
+        public int pos;
         public ShowProductPage(ProductHandler productHandler)
         {
             InitializeComponent();
+            this.productHandler = productHandler;
+            comboProduct.DataContext = productHandler;
+            pos = comboProduct.SelectedIndex;
+            buttonsPanel.Visibility = Visibility.Hidden;
+            
+        }
+
+        private void comboProduct_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            producto = (Producto)comboProduct.SelectedItem;
+            productDataGrid.DataContext = producto;
+            pos = comboProduct.SelectedIndex;
+            buttonsPanel.Visibility = Visibility.Visible;
+        }
+         
+        //BORRAR
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //MODIFICAR
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

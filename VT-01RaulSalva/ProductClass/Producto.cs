@@ -1,7 +1,11 @@
-﻿namespace VT_01RaulSalva.Pages
+﻿using System;
+
+namespace VT_01RaulSalva.ProductClass
+{   
+    public class Producto : ICloneable
 {
     public String referencia { set; get; }
-    public String tipo { set; get; }
+    public String Tipo { set; get; }
     public String marca { set; get; }
     public String precio { set; get; }
     public String stock { set; get; }
@@ -10,25 +14,25 @@
     public Producto(string referencia, string tipo, string marca, string precio, string stock, DateTime fechaAlta)
     {
         this.referencia = referencia;
-        this.tipo = tipo;
+        this.Tipo = tipo;
         this.marca = marca;
         this.precio = precio;
         this.stock = stock;
-        this.fecha = fechaAlta;
+        this.fechaAlta = fechaAlta;
     }
     public Producto()
     {
         this.referencia = "";
-        this.tipo = "";
+        this.Tipo = "";
         this.marca = "";
-        this.telefono = "";
+        this.precio = "";
         this.stock = "";
         this.fechaAlta = DateTime.Now;
     }
 
     public override string ToString()
     {
-        return referncia;
+        return referencia;
     }
 
     public object Clone()
@@ -36,4 +40,5 @@
         return this.MemberwiseClone();
 
     }
+}
 }

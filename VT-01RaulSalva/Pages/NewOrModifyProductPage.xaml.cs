@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VT_01RaulSalva.ProductClass;
 
 namespace VT_01RaulSalva.Pages
 {
@@ -25,14 +26,14 @@ namespace VT_01RaulSalva.Pages
         public int pos;
         public bool verify;
         // constructor de nuevo
-        public NewOrModifyProductPage(string title, UsersHandler productoHandler)
+        public NewOrModifyProductPage(string title, ProductHandler productoHandler)
         {
             InitializeComponent();
             titleNewOrModify.Text = title;
             this.productoHandler = productoHandler;
             this.verify = false;
             producto = new Producto();
-            this.userGrid.DataContext = producto;
+            this.productoGrid.DataContext = producto;
         }
 
         //CONSTRUCTOR DE MODIFICAR
@@ -53,7 +54,7 @@ namespace VT_01RaulSalva.Pages
         {
             if (verify)
             {
-                productoHandler.ModifyUser(producto, pos);
+                productoHandler.ModifyProduct(producto, pos);
             }
             else
             {
@@ -61,7 +62,7 @@ namespace VT_01RaulSalva.Pages
                 //String telefono = txt_Telefono.Text;
                 //DateTime fechaAlta = (DateTime)txt_fechaAlta.SelectedDate;
                 //User user = new User(nombre, telefono, fechaAlta);
-                productoHandler.AddUser(producto);
+                productoHandler.AddProduct(producto);
 
             }
 
