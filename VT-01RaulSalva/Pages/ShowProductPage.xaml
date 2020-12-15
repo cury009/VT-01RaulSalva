@@ -15,14 +15,13 @@
         </StackPanel.Resources>
 
         <TextBlock Text="Consulta Producto" Style="{StaticResource textBlockTitleStyle1}"/>
-        <ComboBox x:Name="comboProduct" ItemsSource="{Binding Path=ProductList}" Margin="0,-15" Width="200" SelectionChanged="comboProduct_SelectionChanged"/>
+        <ComboBox x:Name="comboProduct" ItemsSource="{Binding Path=productoList}" Margin="0,-15" Width="200" SelectionChanged="comboProduct_SelectionChanged"/>
 
-        <Grid x:Name="productDataGrid" Margin="0,10,0,0" Width="350">
+        <Grid x:Name="productDataGrid" Margin="0,10,0,0" Width="450">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="139*"/>
-                <ColumnDefinition Width="36*"/>
-                <ColumnDefinition Width="25*"/>
-                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="230"/>
+                
+                <ColumnDefinition Width="250"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -32,19 +31,19 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="Referencia:" Grid.ColumnSpan="2" Margin="0,5,0.2,4.8"/>
-            <TextBlock Grid.Row="1" Grid.Column="1" Text="Tipo:" Margin="0,4.2,0.2,5.6"/>
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="Marca:" Grid.ColumnSpan="2" Margin="0,3.4,0.2,6.4"/>
-            <TextBlock Grid.Row="3" Grid.Column="0" Text="Precio:" Grid.ColumnSpan="2" Margin="0,2.6,0.2,6.82"/>
-            <TextBlock Grid.Row="4" Grid.Column="0" Text="Stock:" Grid.ColumnSpan="2" Margin="0,2.18,0.2,8.24"/>
-            <TextBlock Grid.Row="5" Grid.Column="0" Text="Fecha de alta:" Margin="0,0.76,0.2,8.24" Grid.ColumnSpan="2"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Referencia:" />
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Tipo:" Margin="0,4.2,0.2,5.6"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Marca:"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Precio:"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Stock:"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Fecha de alta:"/>
 
-            <TextBlock Margin="9.8,5,0,4.8" Text="{Binding Path=referencia}" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left"/>
-            <TextBlock Margin="9.8,5.2,0,4.6" Text="{Binding Path=tipo}" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left"/>
-            <TextBlock Margin="9.8,5.4,0,4.4" Text="{Binding Path=marca}" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left"/>
-            <TextBlock Margin="9.8,4.6,0,4.82" Text="{Binding Path=precio}" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left"/>
-            <TextBlock Margin="9.8,5.18,0,5.24" Text="{Binding Path=stock}" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left"/>
-            <TextBlock Margin="9.8,4.76,0,4.24" Text="{Binding Path=fechaAlta}" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Left"/>
+            <TextBlock Margin="9.8,5,0,4.8" Text="{Binding Path=referencia}" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left"/>
+            <TextBlock Margin="9.8,5.2,0,4.6" Text="{Binding Path=Tipo}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"/>
+            <TextBlock Margin="9.8,5.4,0,4.4" Text="{Binding Path=marca}" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left"/>
+            <TextBlock Margin="9.8,4.6,0,4.82" Text="{Binding Path=precio}" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left"/>
+            <TextBlock Margin="9.8,5.18,0,5.24" Text="{Binding Path=stock}" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left"/>
+            <TextBlock Margin="9.8,4.76,0,4.24" Text="{Binding Path=fechaAlta}" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left"/>
 
         </Grid>
 

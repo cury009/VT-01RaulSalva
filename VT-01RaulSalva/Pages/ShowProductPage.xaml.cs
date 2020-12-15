@@ -45,7 +45,7 @@ namespace VT_01RaulSalva.Pages
         //BORRAR
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.myNavigationFrame.NavigationService.Navigate(new NewOrModifyProductPage("Modificar producto", productHandler, (Producto)producto.Clone(), pos));
         }
 
         //MODIFICAR
@@ -55,3 +55,4 @@ namespace VT_01RaulSalva.Pages
         }
     }
 }
+

@@ -18,8 +18,7 @@
             <Button Content="BUSCAR PRODUCTO" Click="Button_Click_5"/>
             <Button Content="SALIR" Click="Button_Click_3" />
         </StackPanel>
-
-        <Frame x:Name="myFrame" Margin="5" NavigationUIVisibility="Hidden" Width="570" Height="330"/>
+        <Frame x:Name="myFrame" Margin="65,5,67,5" NavigationUIVisibility="Hidden" Height="285" RenderTransformOrigin="0.461,0.492"/>
 
     </StackPanel>
 </Window>

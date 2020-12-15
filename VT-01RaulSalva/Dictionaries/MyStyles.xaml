@@ -27,4 +27,6 @@
         <Setter Property="Margin" Value="25"/>
     </Style>
 
+    <ImageBrush x:Key="background" ImageSource="/imagenes/mediamarkt.jpg" Stretch="Fill"/>
+
 </ResourceDictionary>

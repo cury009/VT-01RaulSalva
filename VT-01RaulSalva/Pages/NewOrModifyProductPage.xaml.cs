@@ -25,6 +25,11 @@ namespace VT_01RaulSalva.Pages
         public Producto producto;
         public int pos;
         public bool verify;
+
+        public NewOrModifyProductPage(ProductHandler productoHandler)
+        {
+            this.productoHandler = productoHandler;
+        }
         // constructor de nuevo
         public NewOrModifyProductPage(string title, ProductHandler productoHandler)
         {

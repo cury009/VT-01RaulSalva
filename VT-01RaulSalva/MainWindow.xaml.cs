@@ -31,6 +31,8 @@ namespace VT_01RaulSalva
             myNavigationFrame = myFrame;
             usersHandler = new UsersHandler();
             productHandler = new ProductHandler();
+            myNavigationFrame.NavigationService.Navigate(new MainPage());
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
